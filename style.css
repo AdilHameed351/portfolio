@@ -1,0 +1,614 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&family=Source+Code+Pro:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}   
+
+.container {
+    display: flex;
+}
+
+.sidebar {
+    /* position: absolute; */
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    font-family: 'Fira Sans', sans-serif;
+    background: rgb(203, 203, 203);
+    height: 100vh;
+    transition: transform 0.3s ease-in;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 30px;
+    padding: 20px 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.main {
+    /* background: yellow; */
+    width: 100%;
+}
+
+.infoContainer {
+    /* background: rgb(202, 9, 128); */
+    height: 58vh;
+    width: 70vw;
+    margin: 144px 100px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.devInfo {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-family: 'Source Code Pro', monospace;
+    font-size: 16px;
+}
+
+.hello {
+    font-size: 4em;
+}
+
+.name {
+    font-size: 3em;
+    font-weight: bold;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+.about {
+    font-size: 2.5em;
+}
+
+.moreabout {
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.2em;
+    margin-top: 23px;
+}
+
+.buttons {
+    margin-top: 34px;
+    font-size: 16px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+.btn {
+    padding: 9px 14px;
+    border-radius: 22px;
+    color: #fff;
+    background: dodgerblue;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 3px;
+    cursor: pointer;
+    box-sizing: border-box;
+    border: 1px solid #fff;
+}
+
+.btn:hover {
+    border: 1px solid #797878;
+    background: #fff;
+    color: dodgerblue;
+
+}
+
+.btn-sm {
+    font-size: 10px;
+    padding: 7px 13px;
+    margin: 10px 0;
+    border: 1px solid #fff;
+}
+
+.devPic img {
+    height: 58vh;
+    border-radius: 40px;
+}
+
+.servicesContainer {
+    margin-bottom: 50px;
+}
+
+.servicesContainer h2 {
+    text-align: center;
+    font-family: "Fira Sans", sans-serif;
+    margin: 30px 0;
+    font-size: 48px;
+}
+
+.services{
+    padding: 0 100px;
+}
+
+.servicesInfo {
+    margin-bottom: 50px;
+}
+
+.servicesInnerContainer {
+    /* border: 1px solid blue; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service {
+    /* border: 1px solid green; */
+    width: 250px;
+    box-shadow: 1px 1px 10px 4px rgb(150, 150, 150);
+    border-radius: 5px;
+    padding: 15px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.service:hover {
+    transform: translateY(-10px);
+}
+
+.service img {
+    width: 100%;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.service p {
+    text-align: center;
+    height: 70px;
+}
+
+.service button {
+    display: block;
+    margin: 30px auto 0;
+}
+
+.contactform {
+    padding: 0 34px;
+    font-family: "Fira Sans", sans-serif;
+    margin: 88px;
+}
+
+.contactform h1 {
+    font-family: "Source Code Pro", monospace;
+    /* padding: 12px 0; */
+}
+
+.contactform form div {
+    padding: 10px 0;
+    display: flex;
+    flex-direction: column;
+}
+
+.contactform form div input {
+    /* width: 26vw; */
+    border-radius: 5px;
+    margin: 6px 0 0 0;
+    padding: 3px;
+}
+
+#emailHelp {
+    font-size: 11px;
+    color: midnightblue;
+    margin: 0 5px;
+    padding: 3px 0 0 0;
+}
+
+#form-check {
+    flex-direction: row;
+}
+
+#form-check input {
+    width: 24px;
+    margin: 3px 0;
+}
+
+h1 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 23px;
+}
+
+.blogContainer {
+    margin: 88px;
+}
+.blogContainer h1 {
+    font-size: 48px;
+}
+
+.blogItem {
+    margin: 20px;
+    font-family: "Fira Sans", sans-serif;
+}
+
+.blogItemBottom {
+    display: none;
+}
+
+.fiverr-seller-widget {
+    margin-left: 30px;
+    padding: 34px;
+}
+
+.fiverr-seller-widget h3 {
+    font-family: "Source Code Pro", monospace;
+    font-size: 24px;
+    margin: 23px;
+}
+
+.fiverr-seller-widget p {
+    margin: 23px;
+}
+
+.fiverr-seller-content {
+    margin: 30px;
+    box-shadow: 1px 1px 8px 8px rgba(150, 150, 150, 0.7) !important;
+}
+
+p {
+    font-family: "Source Code Pro", monospace;
+}
+
+.intro {
+    margin: 88px;
+}
+
+
+.intro h2 {
+    font-family: "Fira Sans", sans-serif;
+    margin: 12px;
+}
+
+.intro p {
+    font-family: "Source Code Pro", monospace;
+    margin: 12px;
+}
+
+.intro .aboutMeHeading {
+    text-align: center;
+    font-size: 48px;
+}
+
+.intro .aboutMePara {
+    margin: 30px 0;
+}
+
+.skillContainer {
+    padding: 12px;
+    /* border: 1px solid blue; */
+    width: 500px;
+    margin-bottom: 50px;
+}
+
+.skillItem {
+    display: flex;
+    align-items: center;
+    font-family: "Source Code Pro", monospace;
+    font-weight: 900;
+}
+
+.skillName {
+    /* border: 1px solid green; */
+    width: 140px;
+}
+
+.skill {
+    width: 265px;
+    height: 6px;
+    background: rgba(193, 193, 193, 0.8);
+    border: 2px solid #000;
+    border-radius: 4px;
+    margin: 10px 0;
+    margin-right: 10px;
+}
+
+/*
+.skillBarInside {
+    width: 0%;
+    height: 6px;
+    background: orange;
+    border-radius: 4px;
+    transition: width 5s;
+}
+*/
+
+.skillBarHTML {
+    width: 0%;
+    height: 6px;
+    background: orange;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+.skillBarCSS {
+    width: 0%;
+    height: 6px;
+    background: aqua;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+.skillBarJavaScript {
+    width: 0%;
+    height: 6px;
+    background: purple;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+.skillBarBootstrap {
+    width: 0%;
+    height: 6px;
+    background: palevioletred;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+.skillBarGithub {
+    width: 0%;
+    height: 6px;
+    background: dodgerblue;
+    border-radius: 4px;
+    transition: width 1s;
+}
+
+
+.myPortfolio {
+    margin-bottom: 50px;
+}
+
+.portfolioContainer {
+    /* border: 1px solid blue; */
+    margin-top: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.projects {
+    /* border: 1px solid green; */
+    box-shadow: 1px 1px 10px 4px rgb(150, 150, 150);
+    width: 250px;
+    padding: 15px;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.projects:hover {
+    transform: translateY(-10px);
+}
+
+.projectImageContainer {
+    position: relative;
+    width: 230px;
+    margin: 0 auto;
+    border: 1px solid #8f8e8e;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.projectImageContainer img {
+    width: 100%;
+    height: 120px;
+}
+
+.projectImageContainer span {
+    position: absolute;
+    font-size: 20px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #000000d9;
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.projectImageContainer span:hover {
+    background: #000;
+}
+
+.projectTitle {
+    height: 40px;
+    margin: 10px 0 !important;
+
+}
+
+.projectDescription {
+    height: 130px;
+    margin: 10px 0 !important;
+    /* border: 1px solid blue; */
+}
+
+.hundred {
+    width: 100%;
+    background: blueviolet;
+}
+
+.seventyFive {
+    width: 75%;
+    background: tomato;
+}
+
+.fifty {
+    width: 50%;
+    background: aqua;
+}
+
+.twentyFive {
+    width: 25%;
+    background: yellow;
+}
+
+.sidebarGo {
+    transform: translate(-443px, 0px);
+    position: absolute;
+}
+
+.hamburger {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 20;
+}
+
+.ham {
+    margin-top: 10px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.cross {
+    margin-left: 185px;
+    margin-top: 10px;
+    cursor: pointer;
+    display: "none";
+}
+
+@media screen and (max-width: 1615px) {
+    /* * {
+        background: rgb(230, 146, 146);
+    } */
+
+    .sidebar nav li {
+        font-size: 20px;
+    }
+
+    .buttons {
+        font-size: 6px;
+    }
+
+    .devInfo {
+        font-size: 10px;
+    }
+
+    .devPic {
+        display: none;
+    }
+
+    .services {
+        padding: 0 30px;
+    }
+
+    /* .sidebar {
+        transform: translate(-443px, 0px);
+        position: absolute;
+    } */
+
+    .intro, .blogContainer, .contactform {
+        margin: 30px 0 0 30px;
+    }
+
+    .contactform h1 {
+        font-size: 24px
+    }
+
+    .cross {
+        margin-left: 150px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .infoContainer {
+        margin: 120px auto;
+
+    }
+
+    .btn {
+        font-size: 10px;
+    }
+
+    .intro {
+        margin: 30px 20px 0 20px;
+    }
+
+    .intro .aboutMeHeading {
+        font-size: 32px;
+    }
+
+    .intro .aboutMePara {
+        text-align: justify;
+    }
+
+    .intro h2 {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .skillContainer {
+        padding: 0;
+    }
+
+    .skillName {
+        font-size: 10px;
+        width: 80px;
+    }
+
+    .skillItem {
+        font-size: 10px;
+    }
+
+    .skill {
+        width: 120px;
+    }
+
+    .projects {
+        width: 220px;
+        padding: 10px;
+    }
+
+    .projectImageContainer {
+        width: 210px;
+        padding: 5px;
+    }
+
+    .services {
+        padding: 0 15px;
+    }
+
+    .servicesContainer h2 {
+        font-size: 32px;
+    }
+
+    .servicesInfo {
+        text-align: justify;
+    }
+
+    .blogContainer {
+        margin: 30px 10px 0 10px;
+    }
+
+    .blogContainer h1 {
+        margin: 20px 40px;
+    }
+
+    .contactform {
+        margin: 30px 10px 0 10px;
+    }
+
+    #form-check input {
+        margin-right: 10px;
+    }
+
+    .fiverr-seller-widget {
+        margin-left: 20px;
+        padding: 0;
+    }
+}
