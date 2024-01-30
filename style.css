@@ -481,6 +481,12 @@ p {
     display: "none";
 }
 
+.footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #c4c4c4;
+}
+
 @media screen and (max-width: 1615px) {
     /* * {
         background: rgb(230, 146, 146);
